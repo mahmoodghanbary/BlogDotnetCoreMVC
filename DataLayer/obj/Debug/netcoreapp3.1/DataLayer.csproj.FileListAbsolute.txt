@@ -1,0 +1,12 @@
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/bin/Debug/netcoreapp3.1/DataLayer.deps.json
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/bin/Debug/netcoreapp3.1/DataLayer.runtimeconfig.json
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/bin/Debug/netcoreapp3.1/DataLayer.runtimeconfig.dev.json
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/bin/Debug/netcoreapp3.1/DataLayer.dll
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/bin/Debug/netcoreapp3.1/DataLayer.pdb
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.csprojAssemblyReference.cache
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.AssemblyInfoInputs.cache
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.AssemblyInfo.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.csproj.CoreCompileInputs.cache
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.dll
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.pdb
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/obj/Debug/netcoreapp3.1/DataLayer.genruntimeconfig.cache

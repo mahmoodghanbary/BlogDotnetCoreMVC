@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2jARQmJr85iRsernlXFk0hQSsCM8qpqXpUZkalB9Bhqeh9bvZzE1Fbe7qfQ/kSa+Hqdf1t4I5FgZIkphfQkPEA==",
+  "dgSpecHash": "4XgCwXu8/qJ2AAxKk5cC+CdajqwWgn0Z3jacw/WQghgxJonLk34BbyWzKm+SiiwwYKLQO9Ji44du6USLSs4OBA==",
   "success": true,
   "projectFilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/DataLayer/DataLayer.csproj",
   "expectedPackageFiles": [
@@ -24,20 +24,14 @@
     "/home/mahmood/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.1/microsoft.extensions.logging.abstractions.3.1.1.nupkg.sha512",
     "/home/mahmood/.nuget/packages/microsoft.extensions.options/3.1.1/microsoft.extensions.options.3.1.1.nupkg.sha512",
     "/home/mahmood/.nuget/packages/microsoft.extensions.primitives/3.1.1/microsoft.extensions.primitives.3.1.1.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/home/mahmood/.nuget/packages/mysqlconnector/0.61.0/mysqlconnector.0.61.0.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
     "/home/mahmood/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
     "/home/mahmood/.nuget/packages/pomelo.entityframeworkcore.mysql/3.1.1/pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "/home/mahmood/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
     "/home/mahmood/.nuget/packages/system.collections.immutable/1.7.0/system.collections.immutable.1.7.0.nupkg.sha512",
     "/home/mahmood/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "/home/mahmood/.nuget/packages/system.diagnostics.diagnosticsource/4.7.0/system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.0/system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
-    "/home/mahmood/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+    "/home/mahmood/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
 }

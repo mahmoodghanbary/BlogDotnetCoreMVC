@@ -24,6 +24,7 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+                services.AddDbContext<BlogDBContext>(x => x.UseMySql("server=localhost;database=Blog_db;uid=root;pwd="));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
