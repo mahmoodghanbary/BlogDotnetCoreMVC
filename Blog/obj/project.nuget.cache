@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bYXqTdz51MuXxBEUFDR/B7k53H/jFQjweazhmZ9LDcqK3Ar0xenBDkwymlzjr/DxkqPHMEUi6EeBkRC86HGkRA==",
+  "success": true,
+  "projectFilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Blog.csproj",
+  "expectedPackageFiles": [
+    "/home/mahmood/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.2/microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
