@@ -20521,6 +20521,11 @@
   "RootNamespace": "Blog",
   "Documents": [
     {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Delete.cshtml",
+      "TargetPath": "Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20541,8 +20546,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Edit.cshtml",
+      "TargetPath": "Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Details.cshtml",
+      "TargetPath": "Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Create.cshtml",
+      "TargetPath": "Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20551,8 +20571,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Index.cshtml",
+      "TargetPath": "Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Pages/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
