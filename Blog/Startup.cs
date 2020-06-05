@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataLayer.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace Blog
 {
@@ -24,6 +27,12 @@ namespace Blog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+             services.AddDbContext<BlogDBContext>(options => options
+                // replace with your connection string
+                .UseMySql("Server=localhost;Database=Blog_db;User=root;Password=;", mySqlOptions => mySqlOptions
+                    // replace with your Server Version and Type
+                    .ServerVersion(new Version(8, 0, 18), ServerType.MySql)
+            ));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,10 +57,17 @@ namespace Blog
 
             app.UseEndpoints(endpoints =>
             {
+
+            endpoints.MapAreaControllerRoute(
+                "Admin",
+                "Admin",
+                "Admin/{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            
         }
+
     }
 }

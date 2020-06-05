@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Areas/Admin/Views/PageGroup/Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\PageGroup\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -20541,6 +20546,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Areas/Admin/Views/PageGroup/Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\PageGroup\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Areas/Admin/Views/PageGroup/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\PageGroup\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -20548,6 +20563,16 @@
     {
       "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Areas/Admin/Views/PageGroup/Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\PageGroup\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/Areas/Admin/Views/PageGroup/Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\PageGroup\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
