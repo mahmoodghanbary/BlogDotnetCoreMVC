@@ -7,24 +7,24 @@ namespace DataLayer.Repositories
 {
     public class PageRepository : IPageRepository
     {
-        private BlogDBContext _db;
-        public PageRepository(BlogDBContext db)
+        private BlogDBContext db;
+        public PageRepository(BlogDBContext context)
         {
-            _db = db;
+            db = context;
         }
         public IEnumerable<Pages> GetAllPage()
         {
-            return _db.Pages;
+            return db.Pages;
         }
         public Pages GetPagesById(int pageId)
         {
-            return _db.Pages.Find(pageId);
+            return db.Pages.Find(pageId);
         }
           public bool InsertPage(Pages page)
         {
             try
             {
-                _db.Pages.Add(page);
+                db.Pages.Add(page);
                 return true;
             }
             catch
@@ -37,7 +37,7 @@ namespace DataLayer.Repositories
         {
             try
             {
-                _db.Entry(page).State=EntityState.Modified;
+                db.Entry(page).State=EntityState.Modified;
                 return true;
             }
             catch
@@ -50,7 +50,7 @@ namespace DataLayer.Repositories
         {
             try
             {
-                _db.Entry(page).State=EntityState.Deleted;
+                db.Entry(page).State=EntityState.Deleted;
                 return true;
             }
             catch
@@ -76,7 +76,7 @@ namespace DataLayer.Repositories
 
         public void Save()
         {
-            _db.SaveChanges();
+            db.SaveChanges();
         }
 
         

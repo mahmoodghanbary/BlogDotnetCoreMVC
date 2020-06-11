@@ -152,3 +152,8 @@
 /home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/PageGroup/Details.cshtml.g.cs
 /home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/PageGroup/Edit.cshtml.g.cs
 /home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/PageGroup/Index.cshtml.g.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/_ViewStart.cshtml.g.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Shared/Error.cshtml.g.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Shared/_Layout.cshtml.g.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/home/mahmood/Public/mahmood/blog/BlogDotnetCoreMVC/Blog/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/_ViewImports.cshtml.g.cs

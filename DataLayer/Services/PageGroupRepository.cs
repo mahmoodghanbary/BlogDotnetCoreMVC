@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using DataLayer.Contracts;
 using DataLayer.Models;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,11 @@ namespace DataLayer.Repositories
 {
     public class PageGroupRepository : IPageGroupRepository
     {
-        BlogDBContext db = new BlogDBContext();
+       private readonly BlogDBContext db;
+       public PageGroupRepository(BlogDBContext context)
+       {
+           this.db=context;
+       }
 
         public IEnumerable<PageGroups> GetAllGroups()
         {
@@ -73,12 +78,6 @@ namespace DataLayer.Repositories
             db.SaveChanges();
         }
 
-
-        
-
-
-       
-
-        
+      
     }
 }

@@ -6,36 +6,38 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DataLayer.Models;
+using DataLayer.Contracts;
+using DataLayer.Repositories;
 
 namespace Blog.Areas.Admin.Contreollers
 {
     [Area("Admin")]
     public class PageGroupController : Controller
     {
-        private readonly BlogDBContext _context;
+       private IPageGroupRepository pageGroupRepository;
 
-        public PageGroupController(BlogDBContext context)
+        public PageGroupController()
         {
-            _context = context;
+            pageGroupRepository = new PageGroupRepository();
         }
+     
 
         // GET: Admin/PageGroup
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              
-            return View(await _context.PageGroups.ToListAsync());
+            return View(pageGroupRepository.GetAllGroups());
         }
 
         // GET: Admin/PageGroup/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var pageGroups = await _context.PageGroups
-                .FirstOrDefaultAsync(m => m.GroupID == id);
+            var pageGroups = pageGroupRepository.GetGroupsById(id.Value);
+                
             if (pageGroups == null)
             {
                 return NotFound();
@@ -55,26 +57,26 @@ namespace Blog.Areas.Admin.Contreollers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("GroupID,GroupTitle")] PageGroups pageGroups)
+        public IActionResult Create([Bind("GroupID,GroupTitle")] PageGroups pageGroups)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(pageGroups);
-                await _context.SaveChangesAsync();
+                pageGroupRepository.InsertGroup(pageGroups);
+                pageGroupRepository.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(pageGroups);
         }
 
         // GET: Admin/PageGroup/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var pageGroups = await _context.PageGroups.FindAsync(id);
+            var pageGroups = pageGroupRepository.GetGroupsById(id.Value);
             if (pageGroups == null)
             {
                 return NotFound();
@@ -87,7 +89,7 @@ namespace Blog.Areas.Admin.Contreollers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("GroupID,GroupTitle")] PageGroups pageGroups)
+        public IActionResult Edit(int id, [Bind("GroupID,GroupTitle")] PageGroups pageGroups)
         {
             if (id != pageGroups.GroupID)
             {
@@ -98,8 +100,8 @@ namespace Blog.Areas.Admin.Contreollers
             {
                 try
                 {
-                    _context.Update(pageGroups);
-                    await _context.SaveChangesAsync();
+                    pageGroupRepository.UpdateGroup(pageGroups);
+                     pageGroupRepository.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -118,15 +120,15 @@ namespace Blog.Areas.Admin.Contreollers
         }
 
         // GET: Admin/PageGroup/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var pageGroups = await _context.PageGroups
-                .FirstOrDefaultAsync(m => m.GroupID == id);
+            var pageGroups = pageGroupRepository.GetGroupsById(id.Value);
+                
             if (pageGroups == null)
             {
                 return NotFound();
@@ -138,17 +140,17 @@ namespace Blog.Areas.Admin.Contreollers
         // POST: Admin/PageGroup/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var pageGroups = await _context.PageGroups.FindAsync(id);
-            _context.PageGroups.Remove(pageGroups);
-            await _context.SaveChangesAsync();
+            
+            pageGroupRepository.DeleteGroup(id);
+            pageGroupRepository.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PageGroupsExists(int id)
         {
-            return _context.PageGroups.Any(e => e.GroupID == id);
+            return PageGroupsExists(id);
         }
     }
 }

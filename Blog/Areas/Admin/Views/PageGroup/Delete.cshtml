@@ -4,11 +4,11 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1>حذف</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>ایا مایلید که این دسته بندی را حذف کنید؟</h3>
 <div>
-    <h4>PageGroups</h4>
+    <h4>دسته بندی ها</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -21,7 +21,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="GroupID" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="حذف" class="btn btn-danger" /> |
+        <a asp-action="Index">بازگشت</a>
     </form>
 </div>
